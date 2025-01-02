@@ -133,6 +133,29 @@
             border-radius: 50%;
         }
 
+        .services-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            padding: 2rem 0;
+        }
+
+        .service-card {
+            background: #ff6600;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+        }
+
+        .service-card span {
+            color: white;
+            font-size: 1.5rem;
+        }
     </style>
 </head>
 <body>
@@ -164,29 +187,42 @@
     <section id="services">
         <div class="container">
             <h2>Our Services</h2>
-            <ul>
-                <li>Ship your small, heavy, multi-package items.</li>
-                <li>Domestic (Air & Surface - Railway) shipments.</li>
-                <li>Ship product weights from 20kg to 4000kg or more.</li>
-                <li>Door-to-Door shipping services.</li>
-                <li>Same-day shipment connections.</li>
-                <li>Dedicated account manager for each client.</li>
-                <li>Appointment-based deliveries available.</li>
-                <li>Real-time tracking of shipments.</li>
-                <li>Insurance policy as per bank norms.</li>
-                <li>Claim support for lost or damaged shipments.</li>
-                <li>24/7 customer care service.</li>
-                <li>COD/Topay service available.</li>
-            </ul>
-            <div class="slider">
-                <div class="slides">
-                    <img src="WhatsApp Image 2024-12-28 at 12.53.35_26f59686.jpg" alt="Service 1">
-                    <img src="WhatsApp Image 2024-12-28 at 12.53.34_b46f1fe9.jpg" alt="Service 2">
-                    <img src="WhatsApp Image 2024-12-28 at 12.53.32_72e4139a.jpg" alt="Service 3">
+            <div class="services-list">
+                <div class="service-card">
+                    <span>&#9656;</span> Ship your small, heavy, multi-package items.
                 </div>
-                <div class="navigation">
-                    <button id="prev">&#10094;</button>
-                    <button id="next">&#10095;</button>
+                <div class="service-card">
+                    <span>&#9656;</span> Domestic (Air & Surface - Railway) shipments.
+                </div>
+                <div class="service-card">
+                    <span>&#9656;</span> Ship product weights from 20kg to 4000kg or more.
+                </div>
+                <div class="service-card">
+                    <span>&#9656;</span> Door-to-Door shipping services.
+                </div>
+                <div class="service-card">
+                    <span>&#9656;</span> Same-day shipment connections.
+                </div>
+                <div class="service-card">
+                    <span>&#9656;</span> Dedicated account manager for each client.
+                </div>
+                <div class="service-card">
+                    <span>&#9656;</span> Appointment-based deliveries available.
+                </div>
+                <div class="service-card">
+                    <span>&#9656;</span> Real-time tracking of shipments.
+                </div>
+                <div class="service-card">
+                    <span>&#9656;</span> Insurance policy as per bank norms.
+                </div>
+                <div class="service-card">
+                    <span>&#9656;</span> Claim support for lost or damaged shipments.
+                </div>
+                <div class="service-card">
+                    <span>&#9656;</span> 24/7 customer care service.
+                </div>
+                <div class="service-card">
+                    <span>&#9656;</span> COD/Topay service available.
                 </div>
             </div>
         </div>
@@ -260,4 +296,3 @@
     </script>
 </body>
 </html>
-
